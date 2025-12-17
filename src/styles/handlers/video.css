@@ -1,0 +1,68 @@
+/* File Handler Styles - Video Player (Win98 style) */
+
+.video-player {
+  background: var(--win-gray);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.video-player-display {
+  flex: 1;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+}
+
+.video-player-display video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.video-player-controls {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--win-gray);
+  border-top: 2px solid var(--border-light);
+}
+
+.video-player-progress {
+  height: 16px;
+  background: #fff;
+  border: 2px solid;
+  border-color: var(--border-darker) var(--border-light) var(--border-light) var(--border-darker);
+  cursor: pointer;
+  position: relative;
+}
+
+.video-player-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--title-grad-start), var(--title-grad-end));
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.video-player-buttons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.video-player-btn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.video-player-time {
+  margin-left: auto;
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+}

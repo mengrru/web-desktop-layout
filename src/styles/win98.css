@@ -1,0 +1,57 @@
+/* Win98 3D Border Styles */
+
+/* Raised border (outset) */
+.outset {
+  border: 2px solid;
+  border-color: var(--border-light) var(--border-darker) var(--border-darker) var(--border-light);
+  box-shadow: 1px 1px 0 var(--border-dark) inset, -1px -1px 0 var(--win-gray) inset;
+  background: var(--win-gray);
+}
+
+/* Sunken border (inset) */
+.inset {
+  border: 2px solid;
+  border-color: var(--border-darker) var(--border-light) var(--border-light) var(--border-darker);
+  box-shadow: 1px 1px 0 var(--border-dark) inset, -1px -1px 0 var(--win-gray) inset;
+  background: #ffffff;
+}
+
+/* Win98 button */
+.win98-btn {
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  font-family: inherit;
+  background: var(--win-gray);
+  border: 2px solid;
+  border-color: var(--border-light) var(--border-darker) var(--border-darker) var(--border-light);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.win98-btn:active {
+  border-color: var(--border-darker) var(--border-light) var(--border-light) var(--border-darker);
+  padding: calc(var(--spacing-xs) + 1px) calc(var(--spacing-md) - 1px) calc(var(--spacing-xs) - 1px) calc(var(--spacing-md) + 1px);
+  box-shadow: none;
+}
+
+.win98-btn:focus {
+  outline: 1px dotted var(--text-primary);
+  outline-offset: -4px;
+}
+
+/* Divider */
+.divider-h {
+  height: 2px;
+  border-top: 1px solid var(--border-dark);
+  border-bottom: 1px solid var(--border-light);
+  margin: var(--spacing-xs) var(--spacing-sm);
+}
+
+.divider-v {
+  width: 2px;
+  height: 22px;
+  border-left: 1px solid var(--border-dark);
+  border-right: 1px solid var(--border-light);
+  margin: 0 var(--spacing-sm);
+}

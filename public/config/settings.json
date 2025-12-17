@@ -1,0 +1,29 @@
+{
+  "wallpaper": {
+    "type": "generated",
+    "generator": "morandi-pixel"
+  },
+  "filters": [
+    {
+      "id": "scanline",
+      "enabled": true,
+      "options": {
+        "opacity": 0.05
+      }
+    }
+  ],
+  "widgets": [
+    {
+      "id": "clock",
+      "enabled": true,
+      "options": {
+        "format": "HH:mm"
+      }
+    }
+  ],
+  "defaultWindowSize": {
+    "width": 400,
+    "height": 300
+  },
+  "theme": "default"
+}

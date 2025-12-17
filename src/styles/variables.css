@@ -1,0 +1,48 @@
+/* CSS Variables - Theme System */
+:root {
+  /* Morandi color scheme (default theme) */
+  --bg-color: #92a8d1;
+  
+  /* Window colors */
+  --win-bg: #f5f5f0;
+  --win-gray: #dcd9d1;
+  
+  /* Title bar gradient (Y2K style) */
+  --title-grad-start: #eacac9;
+  --title-grad-end: #b6c3d1;
+  --title-text: #5e5e5e;
+  
+  /* Border colors for 3D effect */
+  --border-light: #ffffff;
+  --border-dark: #8c8c88;
+  --border-darker: #4a4a46;
+  
+  /* Selection color */
+  --selection-color: #aebdca;
+  
+  /* Text colors */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-light: #f0f0f0;
+  
+  /* Accent colors */
+  --accent-hover: #b6c3d1;
+  --accent-active: #e3d8e3;
+  --accent-danger: #d49a9a;
+  
+  /* Spacing (scaled 1.1x) */
+  --spacing-xs: 2px;
+  --spacing-sm: 4px;
+  --spacing-md: 9px;
+  --spacing-lg: 18px;
+  
+  /* Font sizes (scaled 1.1x for 1080p readability) */
+  --font-size-sm: 13px;
+  --font-size-md: 15px;
+  --font-size-lg: 18px;
+  
+  /* Window defaults (scaled 1.1x) */
+  --taskbar-height: 37px;
+  --icon-size: 35px;
+  --icon-size-sm: 18px;
+}

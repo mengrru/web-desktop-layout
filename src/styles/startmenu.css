@@ -1,0 +1,116 @@
+/* Start Menu Styles */
+
+#start-menu {
+  position: absolute;
+  bottom: calc(var(--taskbar-height) + 2px);
+  left: 3px;
+  width: 220px;
+  background: var(--win-gray);
+  display: none;
+  z-index: 10000;
+  padding: 3px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#start-menu.show {
+  display: flex;
+}
+
+/* Side bar */
+.start-side {
+  width: 28px;
+  background: linear-gradient(180deg, #a0a0a0, #dcd9d1);
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  bottom: 3px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.start-side span {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: var(--text-light);
+  font-weight: bold;
+  font-size: var(--font-size-md);
+  padding: 10px 0;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu content */
+.start-content {
+  margin-left: 32px;
+  background: white;
+  border: 1px solid var(--border-dark);
+  min-height: 200px;
+}
+
+/* Menu item */
+.start-item {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  position: relative;
+}
+
+.start-item:hover {
+  background: var(--accent-hover);
+  color: white;
+}
+
+.start-item img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.start-item span {
+  flex: 1;
+}
+
+/* Submenu arrow */
+.start-item.has-submenu::after {
+  content: '▶';
+  font-size: 8px;
+  margin-left: auto;
+}
+
+/* Separator */
+.start-separator {
+  border-top: 1px solid var(--border-dark);
+  margin: 2px 5px;
+}
+
+/* Submenu */
+.start-submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 180px;
+  background: var(--win-gray);
+  border: 2px solid;
+  border-color: var(--border-light) var(--border-darker) var(--border-darker) var(--border-light);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 10001;
+}
+
+.start-item:hover > .start-submenu {
+  display: block;
+}
+
+.start-submenu .start-item {
+  padding: 6px 10px;
+}
+
+.start-submenu .start-item img {
+  width: 20px;
+  height: 20px;
+}

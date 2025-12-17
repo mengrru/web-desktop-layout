@@ -1,0 +1,87 @@
+{
+  "sideText": "WINDOWS Y2K",
+  "items": [
+    {
+      "id": "programs",
+      "name": "程序",
+      "type": "submenu",
+      "icon": "https://win98icons.alexmeub.com/icons/png/programs-2.png",
+      "children": [
+        {
+          "id": "notepad",
+          "name": "记事本",
+          "type": "markdown",
+          "icon": "https://win98icons.alexmeub.com/icons/png/notepad-5.png",
+          "src": "/content/markdown/about-me.md"
+        },
+        {
+          "id": "media-player",
+          "name": "媒体播放器",
+          "type": "submenu",
+          "icon": "https://win98icons.alexmeub.com/icons/png/media_player_stream_off-0.png",
+          "children": [
+            {
+              "id": "song-menu-1",
+              "name": "复古节拍.mp3",
+              "type": "audio",
+              "icon": "https://win98icons.alexmeub.com/icons/png/cd_audio_cd_a-4.png",
+              "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "documents",
+      "name": "文档",
+      "type": "folder",
+      "icon": "https://win98icons.alexmeub.com/icons/png/directory_open-4.png",
+      "viewMode": "list",
+      "children": [
+        {
+          "id": "doc-1",
+          "name": "关于我.md",
+          "type": "markdown",
+          "src": "/content/markdown/about-me.md"
+        }
+      ]
+    },
+    {
+      "id": "sep-1",
+      "type": "separator"
+    },
+    {
+      "id": "settings",
+      "name": "设置",
+      "type": "submenu",
+      "icon": "https://win98icons.alexmeub.com/icons/png/settings_gear-4.png",
+      "children": [
+        {
+          "id": "change-wallpaper",
+          "name": "上传壁纸...",
+          "type": "action",
+          "icon": "https://win98icons.alexmeub.com/icons/png/display_properties-2.png",
+          "action": "changeWallpaper"
+        },
+        {
+          "id": "random-pattern",
+          "name": "随机图案",
+          "type": "action",
+          "icon": "https://win98icons.alexmeub.com/icons/png/paint_file-2.png",
+          "action": "randomWallpaper"
+        }
+      ]
+    },
+    {
+      "id": "sep-2",
+      "type": "separator"
+    },
+    {
+      "id": "shutdown",
+      "name": "关闭系统",
+      "type": "action",
+      "icon": "https://win98icons.alexmeub.com/icons/png/shut_down_normal-2.png",
+      "action": "shutdown"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  
+  /* Pixel font setup */
+  font-family: 'zpix', 'Pixelify Sans', 'MS Gothic', sans-serif;
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+  
+  /* Disable anti-aliasing for pixel-perfect rendering */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+  text-rendering: optimizeSpeed;
+  
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  
+  /* Pixelated background scaling */
+  image-rendering: pixelated;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Custom cursor */
+  cursor: url('https://win98icons.alexmeub.com/cursors/arrow.cur'), auto;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Force pixel font on key UI elements */
+h1, h2, h3, .title-bar, #clock, #start-btn, button, input {
+  font-family: 'zpix', 'Pixelify Sans', 'MS Gothic', sans-serif;
+}
+
+/* Images should render pixelated */
+img {
+  image-rendering: pixelated;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--win-gray);
+  border: 1px solid var(--border-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--win-gray);
+  border: 2px solid;
+  border-color: var(--border-light) var(--border-darker) var(--border-darker) var(--border-light);
+}
+
+::-webkit-scrollbar-button {
+  background: var(--win-gray);
+  border: 2px solid;
+  border-color: var(--border-light) var(--border-darker) var(--border-darker) var(--border-light);
+  width: 16px;
+  height: 16px;
+}

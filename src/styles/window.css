@@ -1,0 +1,114 @@
+/* Window Styles */
+
+.window {
+  position: absolute;
+  min-width: 250px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15);
+  background: var(--win-gray);
+  z-index: 10;
+}
+
+/* Title bar */
+.title-bar {
+  background: linear-gradient(90deg, var(--title-grad-start), var(--title-grad-end));
+  color: var(--title-text);
+  padding: 3px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: var(--font-size-sm);
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+.title-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.title-bar-icon {
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
+  flex-shrink: 0;
+}
+
+.title-bar-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Title bar controls */
+.title-bar-controls {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.title-bar-controls button {
+  width: 18px;
+  height: 18px;
+  font-size: var(--font-size-sm);
+  line-height: 14px;
+  padding: 0;
+  background: var(--win-gray);
+  border: 1px solid;
+  border-color: #fff #000 #000 #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.title-bar-controls button:active {
+  border-color: #000 #fff #fff #000;
+  padding: 1px 0 0 1px;
+  box-shadow: none;
+}
+
+.btn-minimize::before {
+  content: '_';
+}
+
+.btn-maximize::before {
+  content: '□';
+}
+
+.btn-close::before {
+  content: '×';
+}
+
+.btn-close:hover {
+  background: var(--accent-danger);
+  color: white;
+}
+
+/* Window content area */
+.window-content {
+  flex: 1;
+  margin-top: 2px;
+  overflow: auto;
+  background: var(--win-bg);
+  color: black;
+  user-select: text;
+}
+
+/* Active window title bar */
+.window.active .title-bar {
+  background: linear-gradient(90deg, var(--title-grad-start), var(--title-grad-end));
+}
+
+.window:not(.active) .title-bar {
+  background: linear-gradient(90deg, #d0d0d0, #c0c0c0);
+  color: #808080;
+}

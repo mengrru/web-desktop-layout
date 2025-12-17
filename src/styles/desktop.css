@@ -1,0 +1,63 @@
+/* Desktop Styles */
+
+#desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - var(--taskbar-height));
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 25px;
+  z-index: 1;
+}
+
+/* Desktop icon */
+.desktop-icon {
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid transparent;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8);
+}
+
+.desktop-icon img {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-bottom: 5px;
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.2));
+}
+
+.desktop-icon span {
+  font-size: var(--font-size-sm);
+  line-height: 1.2;
+  padding: 0 4px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  word-break: break-word;
+}
+
+.desktop-icon:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.desktop-icon.selected {
+  background: var(--selection-color);
+  border: 1px dotted #fff;
+  color: var(--text-primary);
+  opacity: 0.95;
+  text-shadow: none;
+}
+
+.desktop-icon.selected span {
+  background: transparent;
+}

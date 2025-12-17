@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y2K Desktop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zpix@3.1.9/dist/zpix.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Desktop icons area -->
+        <div id="desktop"></div>
+        
+        <!-- Taskbar -->
+        <div id="taskbar" class="outset">
+            <div id="start-btn" class="outset">
+                <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png" alt="logo">
+                <span>开始</span>
+            </div>
+            <div class="taskbar-divider"></div>
+            <div id="task-list"></div>
+            <div class="taskbar-divider"></div>
+            <div id="tray" class="inset"></div>
+        </div>
+        
+        <!-- Start menu (hidden by default) -->
+        <div id="start-menu" class="outset">
+            <div class="start-side"><span>WINDOWS Y2K</span></div>
+            <div class="start-content"></div>
+        </div>
+    </div>
+    
+    <!-- Hidden file input for wallpaper upload -->
+    <input type="file" id="wallpaper-input" accept="image/*" style="display: none;">
+    
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

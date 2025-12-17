@@ -1,0 +1,19 @@
+/* Main stylesheet - imports all style modules */
+
+@import './variables.css';
+@import './base.css';
+@import './win98.css';
+@import './desktop.css';
+@import './window.css';
+@import './taskbar.css';
+@import './startmenu.css';
+
+/* File handler styles */
+@import './handlers/folder.css';
+@import './handlers/markdown.css';
+@import './handlers/image.css';
+@import './handlers/video.css';
+@import './handlers/audio.css';
+
+/* Widget styles */
+@import './widgets/calendar.css';

@@ -1,0 +1,72 @@
+/* File Handler Styles - Folder View */
+
+.folder-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+  padding: 10px;
+  background: #fff;
+  min-height: 100%;
+}
+
+.folder-item {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
+.folder-item img {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-bottom: 3px;
+}
+
+.folder-item span {
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  word-break: break-word;
+}
+
+.folder-item:hover {
+  background-color: var(--selection-color);
+}
+
+.folder-item.selected {
+  background: var(--selection-color);
+  border: 1px dotted var(--text-primary);
+}
+
+/* List view mode */
+.folder-view.list-view {
+  flex-direction: column;
+  gap: 0;
+  padding: 5px;
+}
+
+.folder-view.list-view .folder-item {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  height: auto;
+  padding: 3px 6px;
+  margin-bottom: 0;
+}
+
+.folder-view.list-view .folder-item img {
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+
+.folder-view.list-view .folder-item span {
+  font-size: var(--font-size-sm);
+}

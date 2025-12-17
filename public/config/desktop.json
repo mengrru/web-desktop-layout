@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "id": "my-computer",
+      "name": "我的电脑",
+      "type": "folder",
+      "icon": "https://win98icons.alexmeub.com/icons/png/computer_explorer-4.png",
+      "viewMode": "icon",
+      "windowSize": { "width": 500, "height": 400 },
+      "children": []
+    },
+    {
+      "id": "recycle-bin",
+      "name": "回收站",
+      "type": "folder",
+      "icon": "https://win98icons.alexmeub.com/icons/png/recycle_bin_empty-4.png",
+      "viewMode": "icon",
+      "windowSize": { "width": 400, "height": 300 },
+      "children": []
+    },
+    {
+      "id": "about-me",
+      "name": "关于我.md",
+      "type": "markdown",
+      "src": "/content/markdown/about-me.md"
+    },
+    {
+      "id": "sketchbook",
+      "name": "相册",
+      "type": "folder",
+      "viewMode": "icon",
+      "windowSize": { "width": 450, "height": 350 },
+      "children": [
+        {
+          "id": "img-pixel",
+          "name": "像素画.png",
+          "type": "image",
+          "icon": "https://win98icons.alexmeub.com/icons/png/image_landscape-2.png",
+          "src": "https://placehold.co/400x300/8EBAA0/FFF?text=Pixel+Art"
+        },
+        {
+          "id": "img-vapor",
+          "name": "蒸汽波.jpg",
+          "type": "image",
+          "icon": "https://win98icons.alexmeub.com/icons/png/image_landscape-2.png",
+          "src": "https://placehold.co/400x300/D8A7B1/FFF?text=Vaporwave"
+        }
+      ]
+    },
+    {
+      "id": "music-folder",
+      "name": "音乐",
+      "type": "folder",
+      "viewMode": "list",
+      "windowSize": { "width": 350, "height": 300 },
+      "children": [
+        {
+          "id": "song-1",
+          "name": "复古节拍.mp3",
+          "type": "audio",
+          "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        }
+      ]
+    },
+    {
+      "id": "blog-folder",
+      "name": "日志",
+      "type": "folder",
+      "viewMode": "list",
+      "windowSize": { "width": 400, "height": 350 },
+      "children": [
+        {
+          "id": "blog-1",
+          "name": "电子梦.md",
+          "type": "markdown",
+          "src": "/content/markdown/blog-1.md"
+        },
+        {
+          "id": "blog-2",
+          "name": "Y2K宣言.md",
+          "type": "markdown",
+          "src": "/content/markdown/blog-2.md"
+        }
+      ]
+    },
+    {
+      "id": "link-github",
+      "name": "我的GitHub",
+      "type": "link",
+      "icon": "https://win98icons.alexmeub.com/icons/png/world-3.png",
+      "src": "https://github.com"
+    }
+  ]
+}
